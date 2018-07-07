@@ -7,8 +7,8 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-	.setDescription('Çayınız Şekerli Mi Olsun Şekersizmi? **Şekerli İçin ba!ŞekerliÇay Yazın Şekersiz İçin ba!ŞekersizÇay Yazınız!**')
-    .setImage('http://www.imgim.com/5aa657d218c7731a50c51f36.jpg');
+	.setDescription('**Şekerli Çay İçtiniz.**')
+    .setImage('http://www.imgim.com/5193incix8473408.jpg');
     message.channel.sendEmbed(ozelmesajkontrol) }
 	const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
@@ -20,12 +20,12 @@ exports.run = (client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['botu ekle', 'botu davet et', 'botuekle', 'invite'],
+  aliases: ['şekerliçay', 'Şekerliçayt', 'botuekle', 'invite'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'çayiç',
+  name: 'ŞekerliÇay',
   description: 'Çay İçersin.',
-  usage: 'çayiç'
+  usage: 'ŞekerliÇay'
 };
