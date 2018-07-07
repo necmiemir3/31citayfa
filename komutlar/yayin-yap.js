@@ -5,10 +5,10 @@ exports.run = (client, message, args) => {
 	if (twitchtitle.length < 1) return message.reply('Yayın için herhangi bir başlık yazmalısın.');
   message.delete();
   client.user.setStatus("");
-  client.user.setGame(`${twitchtitle}`, 'https://twitch.tv/erentr2');
+  client.user.setGame(`${twitchtitle}`, 'https://twitch.tv/hazretiyasuo');
   message.channel.send({embed: {
     color: 3447003,
-    description: `✅  Twitch başlığı 》 **${twitchtitle}** Olarak değiştirildi.`
+    description: `✅  Batman Bot Başlığı Değiştirildi 》 **${twitchtitle}** Olarak değiştirildi.`
   }});
 };
 
