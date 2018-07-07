@@ -27,7 +27,6 @@ exports.run = (client, message) => {
 			.addField("ba!kahveiç  =  Nescafe İçersin.", "ᅠ")     
 			.addField("ba!yazıtura  =  Yazı Mı? Tura Mı? Oynarsın.", "ᅠ")
 			.addField("ba!günlükmüzik  =  Her Gün Yeni Şarkılar Eklenir.", "ᅠ")
-    .setImage('http://www.imgim.com/s-5f0757a3992d411564df5a7952c1c326dc0d0db1.gif');
     message.channel.sendEmbed(ozelmesajkontrol) }
 	const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
@@ -44,7 +43,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'sigaraiç22',
+  name: 'yardım',
   description: 'Sigara İçersin.',
-  usage: 'sigaraiç22'
+  usage: 'yardım'
 };
