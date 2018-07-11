@@ -35,6 +35,7 @@ exports.run = (client, message) => {
 			.addField("ba!günlükmüzik  =  Her Gün Yeni Şarkılar Eklenir.", "ᅠ")
 			.addField("ba!balıktut  =  Balık Tutarsın.", "ᅠ")
 			.addField("ba!haşmetlim  =  Haşmetlinin Boyunu Gösterir :D. ( YENİ! )", "ᅠ")
+ 			.addField("ba!herkesebendençay  =  Herkese Çay Ismarlarsın. ( YENİ! )", "ᅠ")
 			
     return message.author.sendEmbed(pingozel)
 };
