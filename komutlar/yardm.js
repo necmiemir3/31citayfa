@@ -47,7 +47,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'davet',
+  name: 'yardım',
   description: 'Botun davet linkini gönderir.',
-  usage: 'davet'
+  usage: 'yardım'
 };
