@@ -27,7 +27,9 @@ exports.run = (client, message) => {
 			.addField("ba!kahveiç  =  Nescafe İçersin.", "ᅠ")     
 			.addField("ba!yazıtura  =  Yazı Mı? Tura Mı? Oynarsın.", "ᅠ")
 			.addField("ba!günlükmüzik  =  Her Gün Yeni Şarkılar Eklenir.", "ᅠ")
-			.addField("ba!balıktut  =  Balık Tutarsın. ( YENİ! )", "ᅠ")
+			.addField("ba!balıktut  =  Balık Tutarsın.", "ᅠ")
+     			.addField("ba!haşmetli  =  Senin Haşmetlinin Boyutunu Gösterir. ( YENİ! )", "ᅠ")
+
     message.channel.sendEmbed(ozelmesajkontrol) }
 	const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
