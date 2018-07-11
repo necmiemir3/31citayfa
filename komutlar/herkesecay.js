@@ -8,7 +8,7 @@ exports.run = (client, message) => {
     .setTimestamp()
     .setAuthor(message.author.username)
 	.setDescription('**Herkese Çay Ismarladı! ( Hesabı Ödeyemez Fln Şimdi Başınıza Kalmasın Direk İçip Kaçın Beyler :D )**')
-    .setImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtaSNV4ZbiYg3h15SOQ8W40o7_XcWgn1hs8R3kug1JppNDvMoU');
+    .setImage('https://images-ext-1.discordapp.net/external/_emntPoHeymm-1iZ-2fErqfpGAoiPUldmxCyYwHr7QI/%3Fwidth%3D374%26height%3D250/https/images-ext-1.discordapp.net/external/JYiaThRlKzJ80pvIAKWGAzz1YTU84Y-sR17HzUWznHo/http/cdn.yemek.com/mncrop/940/625/uploads/2015/04/turkiyede-cay-kulturu22.jpg');
     message.channel.sendEmbed(ozelmesajkontrol) }
 	const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
