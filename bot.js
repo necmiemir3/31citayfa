@@ -92,31 +92,8 @@ client.elevation = message => {
   if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 3;
   if (message.author.id === ayarlar.sahip) permlvl = 4;
   return permlvl;
-}
+};
 
-client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('name', 'giris-cıkıs');
-  if (!channel) return;
-  const embed = new Discord.RichEmbed()
-  .setColor('RANDOM')
-  .setAuthor(member.user.username, member.user.avatarURL)
-  .setThumbnail(member.user.avatarURL)
-  .setTitle(':inbox_tray: | Sunucuya Katıldı | Hoşgeldin ')
-  .setTimestamp()
-  channel.sendEmbed(embed);
-});
-
-client.on('guildMemberRemove', member => {
-  const channel = member.guild.channels.find('name', 'giris-cıkıs');
-  if (!channel) return;
-  const embed = new Discord.RichEmbed()
-  .setColor('RANDOM')
-  .setAuthor(member.user.username, member.user.avatarURL)
-  .setThumbnail(member.user.avatarURL)
-  .setTitle(':outbox_tray: | Sunucudan Ayrıldı | Görüşmek Üzere ')
-  .setTimestamp()
-  channel.sendEmbed(embed);
-});
 
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
