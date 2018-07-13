@@ -80,7 +80,7 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm Selam Tekrar Hoşgeldin Dostum!');
+    msg.reply('**Ve Aleyküm Selam Hoş Geldin Kardeşim ;)**^^');
   }
 });
 
@@ -93,6 +93,7 @@ client.elevation = message => {
   if (message.author.id === ayarlar.sahip) permlvl = 4;
   return permlvl;
 };
+
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 // client.on('debug', e => {
