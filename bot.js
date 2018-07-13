@@ -92,7 +92,7 @@ client.elevation = message => {
   if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 3;
   if (message.author.id === ayarlar.sahip) permlvl = 4;
   return permlvl;
-};
+}
 
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find('name', 'giris-cıkıs');
