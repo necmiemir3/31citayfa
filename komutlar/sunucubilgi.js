@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
-
 	if (!message.guild) {
     const ozelmesajuyari = new Discord.RichEmbed()
     .setColor(0xFF0000)
@@ -12,16 +11,16 @@ exports.run = (client, message, params) => {
     return message.author.sendEmbed(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const sunucubilgi = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(0xD97634)
     .setTimestamp()
     .setAuthor(message.guild.name, message.guild.iconURL)
-    .addField('Ad:', message.guild.name)
-    .addField('ID', message.guild.id)
-    .addField('Ana kanal:', message.guild.defaultChannel)
-    .addField('Bölge', message.guild.region)
-    .addField('Üye sayısı:', message.guild.memberCount)
-    .addField('Sahibi:', message.guild.owner + ' (' + message.guild.ownerID + ')')
-    .addField('Kanal sayısı:', message.guild.channels.size)
+    .addField('Ad:', message.guild.name , true)
+    .addField('ID', message.guild.id , true)
+    .addField('Ana kanal:', message.guild.defaultChannel, true)
+    .addField('Bölge', message.guild.region, true)
+    .addField('Üye sayısı:', message.guild.memberCount, true)
+    .addField('Sahibi:', message.guild.owner, true)
+    .addField('Kanal sayısı:', message.guild.channels.size, true)
     .addField('Oluşturulma tarihi:', message.guild.createdAt)
     return message.channel.sendEmbed(sunucubilgi);
     }

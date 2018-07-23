@@ -4,16 +4,16 @@ const client = new Discord.Client();
 exports.run = (client, message) => {
   if (message.channel.type !== 'dm') {
     const ozelmesajkontrol = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(0xD97634)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Özel mesajlarını kontrol et dostum. davet adresini özele gönderdim.');
+    .setDescription('Özel mesajlarını kontrol et. :postbox:');
     message.channel.sendEmbed(ozelmesajkontrol) }
 	const pingozel = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(0xD97634)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Davet Adresim: https://discordapp.com/api/oauth2/authorize?client_id=464877555296632842&permissions=2146958583&scope=bot');
+    .setDescription('Link: https://discordapp.com/api/oauth2/authorize?client_id=464877555296632842&permissions=2146958583&scope=bot');
     return message.author.sendEmbed(pingozel)
 };
 

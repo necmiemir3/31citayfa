@@ -21,7 +21,7 @@ exports.run = (client, message, args) => {
   message.guild.ban(user, 2);
 
   const embed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(0xD97634)
     .setTimestamp()
     .addField('Eylem:', 'Ban')
     .addField('Kullanıcı:', `${user.username}#${user.discriminator} (${user.id})`)
